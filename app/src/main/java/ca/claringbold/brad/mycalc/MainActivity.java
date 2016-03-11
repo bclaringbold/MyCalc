@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button buttondecimal,buttonadd,buttonsubtract,buttonmultiply,buttondivide,buttonequal,buttonclear;
     TextView textoutput;
     int value1,value2;
-    boolean add,subtract,divide,multiply;
+    boolean add,subtract,divide,multiply,decimalpressed;
 
 
     @Override
@@ -44,6 +44,78 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 textoutput.setText(textoutput.getText()+"1");
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textoutput.setText(textoutput.getText()+"2");
+            }
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textoutput.setText(textoutput.getText()+"3");
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textoutput.setText(textoutput.getText()+"4");
+            }
+        });
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textoutput.setText(textoutput.getText()+"5");
+            }
+        });
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textoutput.setText(textoutput.getText()+"6");
+            }
+        });
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textoutput.setText(textoutput.getText()+"7");
+            }
+        });
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textoutput.setText(textoutput.getText()+"8");
+            }
+        });
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textoutput.setText(textoutput.getText()+"9");
+            }
+        });
+        button0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textoutput.setText(textoutput.getText()+"0");
+            }
+        });
+        buttondecimal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (decimalpressed==false) {
+                    decimalpressed=true;
+                    textoutput.setText(textoutput.getText()+".");
+                }
+
+            }
+        });
+        buttonclear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                decimalpressed=false;
+                textoutput.setText("");
             }
         });
 
